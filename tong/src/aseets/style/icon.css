@@ -1,0 +1,11 @@
+.icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.icon-notice {
+    background-image: url(../img/notice.png);
+}
