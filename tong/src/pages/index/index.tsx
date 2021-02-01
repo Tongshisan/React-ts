@@ -2,7 +2,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 19:02:09
- * @LastEditTime: 2021-01-31 19:19:30
+ * @LastEditTime: 2021-02-01 10:27:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/tong/src/pages/index/index.tsx
@@ -25,7 +25,6 @@ export default class Index extends React.Component<IIndexProps, IIndexStore> {
     render() {
         return (
             <div>
-                <p>lll</p>
                 <Icon type='notice'></Icon>
             </div>
         )
