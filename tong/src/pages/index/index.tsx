@@ -2,13 +2,14 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 19:02:09
- * @LastEditTime: 2021-02-01 10:27:10
+ * @LastEditTime: 2021-02-01 11:45:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/tong/src/pages/index/index.tsx
  */
 import * as React from 'react';
 import Icon from '../../components/Icon';
+// import Icon from '@src/components/Icon';
 
 interface IIndexProps {}
 interface IIndexStore {}
