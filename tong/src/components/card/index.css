@@ -1,0 +1,23 @@
+.card-wrap {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #fff;
+}
+.card-wrap span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}

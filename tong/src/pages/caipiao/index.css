@@ -1,0 +1,7 @@
+.nums-wrap {
+    display: flex;
+    align-items: center;
+}
+.nums-wrap div {
+    margin-left: 20px;
+}
