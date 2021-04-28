@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-27 17:08:58
- * @LastEditTime: 2021-04-28 10:17:26
+ * @LastEditTime: 2021-04-28 14:17:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/components/UseReducer/index.tsx
@@ -20,10 +20,14 @@ import 'antd/dist/antd.css'
 import {useFormData} from '../../hooks/useFormData';
 
 export const DemoUseReducer = (props: any) => {
-    const [formData, setFormItem, resetForm] = useFormData()
+    const initFormData = {
+        name: '张三',
+        age: 22,
+        sex: 1
+    };
+    const [formData, setFormItem, resetForm] = useFormData(initFormData)
 
     const {name, age, sex} = formData;
-    console.log(name, age, sex)
     React.useEffect(() => {
         resetForm()
         console.log('DemoUseReducer');
