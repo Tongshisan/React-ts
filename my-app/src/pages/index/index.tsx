@@ -1,15 +1,15 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 15:58:55
- * @LastEditTime: 2021-06-13 18:26:06
+ * @LastEditTime: 2021-06-13 22:00:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/pages/index.tsx
  */
 import * as React from 'react';
-import Icon from '../../components/Icon';
-import {DemoUseReducer} from '../../components/UseReducer';
-import CountDownBtn from '../../components/CountDownBtn';
+
+import {Icon, DemoUseReducer, CountDownBtn, HoverShowCard} from '@/components';
+import './index.css';
 
 export default class Index extends React.Component<any, any> {
     constructor(props: any) {
@@ -34,6 +34,11 @@ export default class Index extends React.Component<any, any> {
                 <input type="file" accept="image/*" /> 
                 <input type="file" />
                 <CountDownBtn initCount={30}/>
+                <HoverShowCard title="测试">
+                    <div className="children">
+                        <span>我是孩子</span>
+                    </div>
+                </HoverShowCard>
             </div>
         )
     }

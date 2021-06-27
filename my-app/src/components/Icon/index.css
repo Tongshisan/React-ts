@@ -1,0 +1,22 @@
+.icon {
+    flex-shrink: 0;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.icon-test {
+    width: 50px;
+    height: 50px;
+    background-image: url(@/assets/img/mp3.svg);
+}
+.icon-notice {
+    width: 50px;
+    height: 50px;
+    background-image: url(@/assets/img/notice.png);
+}
+
+.icon-arrow-black {
+    width: 14px;
+    height: 14px;
+    background-image: url(@/assets/img/arrow-black.png);
+}
