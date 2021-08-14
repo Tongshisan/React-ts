@@ -1,17 +1,26 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 15:48:44
- * @LastEditTime: 2021-01-31 17:24:20
+ * @LastEditTime: 2021-07-21 14:14:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/App.tsx
  */
 import React from 'react';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Index from './pages/index';
+import IsShow from './pages/isShow';
+import Resize from './pages/resize';
 function App() {
   return (
-    <Index></Index>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Index} />
+        <Route path="/is-show" exact component={IsShow} />
+        <Route path="/resize" exact component={Resize} />
+      </Switch>
+    </Router>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

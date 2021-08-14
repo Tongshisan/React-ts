@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-04-27 17:08:58
- * @LastEditTime: 2021-04-28 14:17:59
+ * @LastEditTime: 2021-06-27 16:15:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/components/UseReducer/index.tsx
@@ -13,8 +13,6 @@ import {
     Input,
     Button,
     Radio,
-    Select,
-    Switch
 } from 'antd'
 import 'antd/dist/antd.css'
 import {useFormData} from '../../hooks/useFormData';

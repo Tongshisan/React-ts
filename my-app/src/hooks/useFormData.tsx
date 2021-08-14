@@ -1,13 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2021-04-27 18:53:05
- * @LastEditTime: 2021-04-28 14:07:13
+ * @LastEditTime: 2021-06-27 16:15:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/hooks/useFormData.tsx
  */
 import * as React from 'react';
-import {IFormData} from './define';
+// import {IFormData} from './define';
 
 export const useFormData = (initFormData: any) => {
     const formData: any = React.useRef({...initFormData});
@@ -31,7 +31,7 @@ export const useFormData = (initFormData: any) => {
             forceUpdate(+new Date());
         }
         return [setFormItem, resetForm]
-    }, []);
+    }, [initFormData]);
 
     return [formData.current, ...handleForm]
 }

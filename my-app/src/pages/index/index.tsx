@@ -1,22 +1,30 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 15:58:55
- * @LastEditTime: 2021-06-13 22:00:39
+ * @LastEditTime: 2021-07-06 16:02:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/pages/index.tsx
  */
 import * as React from 'react';
+import html2canvas from 'html2canvas';
 
 import {Icon, DemoUseReducer, CountDownBtn, HoverShowCard} from '@/components';
 import './index.css';
 
+const options = {};
 export default class Index extends React.Component<any, any> {
     constructor(props: any) {
         super(props);
         this.state = {
             name: '小彤彤'
         }
+    }
+
+    componentDidMount() {
+        html2canvas(document.body, options).then((canvas) => {
+            document.body.appendChild(canvas)
+        })
     }
 
     render() {

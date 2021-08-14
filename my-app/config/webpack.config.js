@@ -31,6 +31,11 @@ const postcssNormalize = require('postcss-normalize');
 
 const appPackageJson = require(paths.appPackageJson);
 
+// test
+const HelloWordPlugin = require('../plugins/HelloWordPlugin');
+const HelloAsyncPlugin = require('../plugins/HelloAsyncPlugin');
+const FileListPlugin = require('../plugins/FileListPlugin');
+
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 
@@ -556,6 +561,9 @@ module.exports = function (webpackEnv) {
       ],
     },
     plugins: [
+      new HelloWordPlugin({options: true}),
+      new HelloAsyncPlugin(),
+      new FileListPlugin(),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
