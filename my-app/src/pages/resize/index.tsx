@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-07-21 14:09:41
- * @LastEditTime: 2021-07-30 17:18:28
+ * @LastEditTime: 2021-08-26 15:06:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /lizhi/React-ts/my-app/src/pages/resize/index.tsx
@@ -32,9 +32,12 @@ const IResize: React.FC<IResizeProps> = () => {
         split="horizontal"
         initialSizes={initSizes}
         collapse={{
-          buttonTransition: "none"
+          buttonTransition: "none",
+          collapseDirection: "down",
+          overlayCss:{
+            backgroundColor: 'transparent'
+          }
         }}
-        // collapsedSizes={[null, 40]}
         minSizes={0}
         collapsedSizes={collapseSize}
         hooks={{
@@ -45,6 +48,9 @@ const IResize: React.FC<IResizeProps> = () => {
           onSaveSizes: (size) => {
             console.log(size, 'save')
             setInitSizes([...size])
+          },
+          onChange: (sizes) => {
+            setInitSizes(sizes)
           }
         }}
       >

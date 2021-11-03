@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 15:48:44
- * @LastEditTime: 2021-07-21 14:14:33
+ * @LastEditTime: 2021-10-29 17:21:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/App.tsx
@@ -12,6 +12,10 @@ import './App.css';
 import Index from './pages/index';
 import IsShow from './pages/isShow';
 import Resize from './pages/resize';
+import Three from './pages/three';
+import CollapseComp from './pages/collapse';
+import Tests from './pages/tests';
+import UseEffect from './pages/useEffect';
 function App() {
   return (
     <Router>
@@ -19,6 +23,10 @@ function App() {
         <Route path="/" exact component={Index} />
         <Route path="/is-show" exact component={IsShow} />
         <Route path="/resize" exact component={Resize} />
+        <Route path="/three" exact component={Three} />
+        <Route path="/collapse" exact component={CollapseComp} />
+        <Route path="/tests" exact component={Tests} />
+        <Route path="/use-effect" exact component={UseEffect} />
       </Switch>
     </Router>
     // <div className="App">

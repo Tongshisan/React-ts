@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 15:58:55
- * @LastEditTime: 2021-07-06 16:02:56
+ * @LastEditTime: 2021-10-29 17:17:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/pages/index.tsx
@@ -21,11 +21,11 @@ export default class Index extends React.Component<any, any> {
         }
     }
 
-    componentDidMount() {
-        html2canvas(document.body, options).then((canvas) => {
-            document.body.appendChild(canvas)
-        })
-    }
+    // componentDidMount() {
+    //     html2canvas(document.body, options).then((canvas) => {
+    //         document.body.appendChild(canvas)
+    //     })
+    // }
 
     render() {
         return (
