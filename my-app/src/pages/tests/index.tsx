@@ -1,13 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2021-08-27 15:55:06
- * @LastEditTime: 2021-10-13 17:54:12
+ * @LastEditTime: 2021-11-24 17:25:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /lizhi/React-ts/my-app/src/pages/split/index.tsx
  */
 import React, { useEffect, useState, useReducer } from 'react';
-import MouseTrap from 'mousetrap'; 
+import MouseTrap from 'mousetrap';
+import '../../components/webComponent'; 
 // import {Split} from '../../components';
 
 export interface TestProps {
@@ -68,6 +69,7 @@ const Test: React.FC<TestProps> = () => {
       </div>
       <div onClick={() => dispatch({type: 'increment'})}>number++</div>
       <div onClick={() => dispatch({type: 'decrement'})}>number--</div>
+      {/* <user-card></user-card> */}
     </div>
   );
 }

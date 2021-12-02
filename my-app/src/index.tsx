@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { AliveScope } from 'react-activation'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AliveScope>
+      <App />
+    </AliveScope>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -58,6 +58,7 @@
     "postcss-safe-parser": "5.0.2",
     "prompts": "2.4.0",
     "react": "^17.0.1",
+    "react-activation": "^0.9.5",
     "react-app-polyfill": "^2.0.0",
     "react-collapse": "^5.1.0",
     "react-collapse-pane": "^2.0.1",

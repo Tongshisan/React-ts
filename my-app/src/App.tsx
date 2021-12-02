@@ -1,13 +1,14 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 15:48:44
- * @LastEditTime: 2021-10-29 17:21:42
+ * @LastEditTime: 2021-12-02 11:15:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/App.tsx
  */
 import React from 'react';
 import {HashRouter as Router, Switch, Route} from 'react-router-dom';
+import KeepAlive from 'react-activation';
 import './App.css';
 import Index from './pages/index';
 import IsShow from './pages/isShow';
@@ -16,6 +17,10 @@ import Three from './pages/three';
 import CollapseComp from './pages/collapse';
 import Tests from './pages/tests';
 import UseEffect from './pages/useEffect';
+import KeepAlive1 from './pages/keepAlive/keep-alive-1';
+import KeepAlive2 from './pages/keepAlive/keep-alive-2';
+import './test';
+// import Parent from './pages/parent-child/parent';
 function App() {
   return (
     <Router>
@@ -27,6 +32,13 @@ function App() {
         <Route path="/collapse" exact component={CollapseComp} />
         <Route path="/tests" exact component={Tests} />
         <Route path="/use-effect" exact component={UseEffect} />
+        <Route path="/keep1" exact component={KeepAlive1} />
+        <Route path="/keep2" exact component={() => (
+          <KeepAlive>
+            <KeepAlive2 />
+          </KeepAlive>
+        )} />
+        {/* <Route path="/parent" exact component={Parent} /> */}
       </Switch>
     </Router>
     // <div className="App">
