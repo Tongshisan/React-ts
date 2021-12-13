@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 15:48:44
- * @LastEditTime: 2021-12-02 11:15:20
+ * @LastEditTime: 2021-12-06 15:00:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/App.tsx
@@ -19,6 +19,7 @@ import Tests from './pages/tests';
 import UseEffect from './pages/useEffect';
 import KeepAlive1 from './pages/keepAlive/keep-alive-1';
 import KeepAlive2 from './pages/keepAlive/keep-alive-2';
+import Dnd from './pages/dnd';
 import './test';
 // import Parent from './pages/parent-child/parent';
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <KeepAlive2 />
           </KeepAlive>
         )} />
+        <Route path="/dnd" exact component={Dnd} />
         {/* <Route path="/parent" exact component={Parent} /> */}
       </Switch>
     </Router>
