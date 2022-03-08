@@ -1,16 +1,21 @@
 /*
  * @Author: your name
  * @Date: 2021-08-27 15:55:06
- * @LastEditTime: 2021-11-24 17:25:16
+ * @LastEditTime: 2022-01-05 18:20:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /lizhi/React-ts/my-app/src/pages/split/index.tsx
  */
 import React, { useEffect, useState, useReducer } from 'react';
+import { DatePicker, ConfigProvider } from 'antd';
+import locale from 'antd/lib/date-picker/locale/zh_CN.js';
+import moment from 'moment';
+import 'moment/dist/locale/zh-cn'
 import MouseTrap from 'mousetrap';
 import '../../components/webComponent'; 
 // import {Split} from '../../components';
 
+moment.locale('zh-cn')
 export interface TestProps {
   
 }
@@ -69,6 +74,9 @@ const Test: React.FC<TestProps> = () => {
       </div>
       <div onClick={() => dispatch({type: 'increment'})}>number++</div>
       <div onClick={() => dispatch({type: 'decrement'})}>number--</div>
+      {/* <ConfigProvider locale={locale as any}> */}
+        <DatePicker locale={locale} />
+      {/* </ConfigProvider> */}
       {/* <user-card></user-card> */}
     </div>
   );
