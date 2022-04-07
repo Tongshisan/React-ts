@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-01-31 15:48:44
- * @LastEditTime: 2021-12-06 15:00:34
+ * @LastEditTime: 2022-03-08 11:26:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /React-ts/my-app/src/App.tsx
@@ -20,6 +20,7 @@ import UseEffect from './pages/useEffect';
 import KeepAlive1 from './pages/keepAlive/keep-alive-1';
 import KeepAlive2 from './pages/keepAlive/keep-alive-2';
 import Dnd from './pages/dnd';
+import AntdMenu from './pages/antd-menu';
 import './test';
 // import Parent from './pages/parent-child/parent';
 function App() {
@@ -40,6 +41,7 @@ function App() {
           </KeepAlive>
         )} />
         <Route path="/dnd" exact component={Dnd} />
+        <Route path="/antd-menu" exact component={AntdMenu} />
         {/* <Route path="/parent" exact component={Parent} /> */}
       </Switch>
     </Router>
