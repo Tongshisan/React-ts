@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { Menu } from 'antd'
+import { Menu, Button } from 'antd'
 
 interface IAntdMenuProps {
   
@@ -15,7 +15,7 @@ const AntdMenu: FunctionComponent<IAntdMenuProps> = () => {
         mode="inline"
       >
         <Menu.Item>
-          测试1
+          <Button type="primary">测试</Button>
         </Menu.Item>
         <Menu.Item>
           测试2

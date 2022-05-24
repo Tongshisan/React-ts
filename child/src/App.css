@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.error-color {
+  color: var(--error-color);
+}
+
+.border-div {
+  border: 1px solid var(--border-color);
+}
+
+.border-radius-div {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+:root {
+  --primary-color: #eea83f;
+  --error-color: red;
+  --border-color: #e4e4e4;
+  --border-radius: 4px
+}
